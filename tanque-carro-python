@@ -1,0 +1,12 @@
+tanque = 50
+
+while True:
+    litros = float(input('Digite quantos litros serão abastecidos:'))
+    if 0 < litros <= tanque:
+        valor_total = litros * 5.80
+        print(f'Abastecimento concluído!Total a pagar:{valor_total:.2f}\n')
+        break
+    else:
+        print('Valor inválido,informe novamente a quantidade de litros')
+
+print('Até a próxima!')
