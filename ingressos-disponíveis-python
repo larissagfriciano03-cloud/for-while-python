@@ -1,0 +1,12 @@
+disponivel = 30
+
+while True:
+    compra = int(input('Informe a quantidade de ingressos desejada: '))
+    valor_restante = disponivel - compra
+    if 0 < compra <= disponivel:
+        print(f'Compra realizada com sucesso! Ingressos restantes na sala: {valor_restante}\n')
+        break
+    else:
+        print('Quantidade indisponível! Tente um número menor')
+        
+print('Aproveite a sessão!')
