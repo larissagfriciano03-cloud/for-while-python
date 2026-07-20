@@ -1,0 +1,22 @@
+saldo = 1352.25
+senha = "253035" 
+
+
+while True:
+    acesso = input('Digite a senha para liberação: ')
+    if acesso == senha:
+        print('Acesso liberado!\n')
+        break
+    else:
+        print('Senha inválida, tente novamente.\n')
+
+while True:
+    saque = float(input('Digite o valor que deseja sacar: '))
+    if 0 < saque <= saldo:
+        saldo -= saque
+        print(f'Saque realizado com sucesso! Saldo atual: R$ {saldo:.2f}')
+        break
+    else:
+        print('Valor inválido ou saldo insuficiente.\n')
+
+print('Até a próxima!')
